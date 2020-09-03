@@ -1,0 +1,33 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .45);
+    padding-top: 95px;
+    z-index: 10;
+}
+
+.modal {
+    background: #fff;
+    border-radius: 15px;
+    max-width: 250px;
+    min-height: 265px;
+    margin: 0 auto;
+    padding: 30px 10px;
+    position: relative;
+    z-index: 20;
+}
+
+.modal-close {
+    content: "";
+    position:absolute;
+    background: $close-modal;
+    background-size: 10px;
+    width: 10px;
+    height: 10px;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}

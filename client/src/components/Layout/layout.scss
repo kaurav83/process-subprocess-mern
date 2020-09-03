@@ -1,0 +1,26 @@
+.header {
+    &__bg {
+        background: #443D53;
+        padding: 25px;
+    }
+
+    &__title {
+        position: relative;
+        text-align: center;
+        color: $title-color;
+        font-weight: 600;
+        margin: 0 15px;
+        margin-top: 5px;
+        padding: 12px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            background: $arrow-left;
+            background-size: 10px;
+            height: 15px;
+            width: 10px;
+            left: 0;
+        }
+    }
+}

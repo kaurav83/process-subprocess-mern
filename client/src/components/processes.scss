@@ -1,0 +1,92 @@
+.processes {
+    margin: 0 16px;
+    margin-top: 24px;
+    &__list {
+        margin-top: 24px;
+    }
+    &__add-process {
+        position: relative;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        width: fit-content;
+        &:before {
+            content: "";
+            position: absolute;
+            background: $add-process;
+            background-size: 30px;
+            width: 30px;
+            height: 30px;
+        }
+
+        &--subprocess {
+            position: absolute;
+            top: 85%;
+            right: 38px;
+        }
+    }
+
+    &__add-process-text {
+        color: $regular-color;
+        font-weight: normal;
+        font-size: 14px;
+        margin-left: 46px;
+    }
+
+    &__title-inner-modal {
+        color: $title-color;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 22px;
+        padding: 5px 0;
+    }
+
+    &__fields {
+        margin-top: 5px;
+    }
+
+    &__field-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    &__label {
+        color: #999;
+        font-size: 10px;
+        font-weight: normal;
+        line-height: 14px;
+        margin-left: 8px;
+    }
+
+    &__field {
+        height: 40px;
+        background: #F6F6F6;
+        border-radius: 10px;
+        border: none;
+        color: $title-color;
+        padding-left: 19px;
+        line-height: 19px;
+    }
+
+    &__submit-btn {
+        background: $finish-state;
+        border-radius: 10px;
+        width: 250px;
+        height: 40px;
+        color: #fff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin: 0 auto;
+        margin-top: 30px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &--sub {
+            margin-top: 90px;
+        }
+    }
+}
